@@ -13,6 +13,9 @@ WriteMakefile(
     MIN_PERL_VERSION => 5.006,
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
+        'JSON' => 2.15,
+        'Hash::Flatten' => 1.19,
+        'LWP::UserAgent' => 6.06,
     },
     BUILD_REQUIRES => {
         'Test::More' => 0,

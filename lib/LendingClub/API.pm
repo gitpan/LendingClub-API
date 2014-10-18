@@ -1,6 +1,6 @@
 #######################################
 #  LendingClub.com API Perl Module    #
-#  version 0.1.0                      #
+#  version 0.2.0                      #
 #                                     #
 # Author: Michael W. Renz             #
 # Created: 17-Oct-2014                #
@@ -45,10 +45,10 @@ use Exporter;
 use Carp;
 
 my $modname="lendingclub-perl-module";
-my $modver="0.1.0";
+my $modver="0.2.0";
 
 use vars qw($VERSION);
-$LendingClub::API::VERSION = '0.1.0';
+$LendingClub::API::VERSION = '0.2.0';
 
 use JSON;
 use Hash::Flatten qw(:all);
@@ -69,6 +69,18 @@ $lcapi{urls}{api}{loans_url}           = $lcapi{urls}{api_url}. "/loans";
 $lcapi{urls}{api}{loans}{listing}      = $lcapi{urls}{api}{loans_url}. "/listing";
 
 my $o = new Hash::Flatten();
+
+=pod
+
+=over 4
+
+=item my $lcapi_object = new LendingClub::API( "this-is-not-a-real-investor-id", "this-is-not-a-real-key" );
+
+The LendingClub::API module needs the investor id and the LendingClub API key for all functions.
+
+=back
+
+=cut
 
 sub new
 {
@@ -192,10 +204,21 @@ sub TRACE {}
 
 =pod
 
+=head1 CHANGELOG
+
+=over 4
+
+=item * Documentation for 'new'
+
+=item * Attempt to add dependencies
+
+=back
 
 =head1 TODO
 
 =over 4
+
+=item * Add POST operations for the LendingClub API
 
 =item * Add comprehensive unit tests to module distribution
 
@@ -215,7 +238,7 @@ See https://www.lendingclub.com/developers/lc-api.action for the most updated AP
 
 =head1 VERSION
 
-$Id: API.pm,v 0.1.0 2014/06/08 09:08:00 CRYPTOGRA Exp $
+$Id: API.pm,v 0.2.0 2014/06/08 09:08:00 CRYPTOGRA Exp $
 
 
 =head1 AUTHOR

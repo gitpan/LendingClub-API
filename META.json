@@ -27,7 +27,10 @@
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "ExtUtils::MakeMaker" : "0",
+            "Hash::Flatten" : "1.19",
+            "JSON" : "2.15",
+            "LWP::UserAgent" : "6.06"
          }
       },
       "runtime" : {
@@ -37,5 +40,5 @@
       }
    },
    "release_status" : "stable",
-   "version" : "v0.1.0"
+   "version" : "v0.2.0"
 }
