@@ -1,6 +1,6 @@
 #######################################
 #  LendingClub.com API Perl Module    #
-#  version 0.2.0                      #
+#  version 0.3.0                      #
 #                                     #
 # Author: Michael W. Renz             #
 # Created: 17-Oct-2014                #
@@ -45,10 +45,10 @@ use Exporter;
 use Carp;
 
 my $modname="lendingclub-perl-module";
-my $modver="0.2.0";
+my $modver="0.3.0";
 
 use vars qw($VERSION);
-$LendingClub::API::VERSION = '0.2.0';
+$LendingClub::API::VERSION = '0.3.0';
 
 use JSON;
 use Hash::Flatten qw(:all);
@@ -210,7 +210,7 @@ sub TRACE {}
 
 =item * Documentation for 'new'
 
-=item * Attempt to add dependencies
+=item * Attempts 1/2 to add dependencies
 
 =back
 
@@ -238,7 +238,7 @@ See https://www.lendingclub.com/developers/lc-api.action for the most updated AP
 
 =head1 VERSION
 
-$Id: API.pm,v 0.2.0 2014/06/08 09:08:00 CRYPTOGRA Exp $
+$Id: API.pm,v 0.3.0 2014/06/08 09:08:00 CRYPTOGRA Exp $
 
 
 =head1 AUTHOR

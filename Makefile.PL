@@ -13,16 +13,14 @@ WriteMakefile(
     MIN_PERL_VERSION => 5.006,
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
-        'JSON' => 2.15,
-        'Hash::Flatten' => 1.19,
-        'LWP::UserAgent' => 6.06,
     },
     BUILD_REQUIRES => {
         'Test::More' => 0,
     },
     PREREQ_PM => {
-        #'ABC'              => 1.6,
-        #'Foo::Bar::Module' => 5.0401,
+        'JSON' => 0,
+        'Hash::Flatten' => 0,
+        'LWP::UserAgent' => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'LendingClub-API-*' },
